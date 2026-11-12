@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin: 0; color: #1e293b; font-family: Arial, sans-serif; background: #f8fafc; }
+.site-header { display: flex; align-items: center; justify-content: space-between; padding: 20px 7%; background: #172554; color: white; }
+.brand { color: white; font-weight: 900; letter-spacing: .12em; text-decoration: none; }
+nav { display: flex; gap: 22px; }
+nav a { color: white; text-decoration: none; }
+main { max-width: 1000px; margin: auto; padding: 0 24px; }
+.hero { padding: 70px 0; }
+.hero > p:first-child { color: #2563eb; font-size: .75rem; font-weight: 800; letter-spacing: .16em; }
+.hero h1 { font-size: clamp(2.6rem, 7vw, 5rem); margin: 10px 0; }
+.comparison { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.comparison article { padding: 26px; border: 1px solid #dbe3ef; border-radius: 14px; background: white; }
+.examples { padding: 55px 0; }
+.demo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.demo-grid div { padding: 28px; text-align: center; border-radius: 10px; background: #dbeafe; }
+footer { padding: 28px; text-align: center; background: #172554; color: white; }
+@media (max-width: 600px) { .comparison, .demo-grid { grid-template-columns: 1fr; } .site-header { align-items: flex-start; flex-direction: column; gap: 14px; } }
