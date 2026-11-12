@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Tokens and Typography</title>
+  <link rel="stylesheet" href="tokens.css">
+  <style>
+    body { margin: 0; padding: var(--space-5); background: var(--color-page); color: var(--color-text); font-family: var(--font-body); }
+    main { max-width: 760px; margin: auto; padding: var(--space-5); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
+    h1, h2 { font-family: var(--font-heading); }
+    h1 { font-size: var(--text-title); color: var(--color-primary-dark); }
+    p { font-size: var(--text-base); line-height: 1.7; }
+    .lead { font-size: var(--text-large); color: var(--color-muted); }
+    .label { font-size: var(--text-small); color: var(--color-primary); font-weight: bold; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="label">CSS DESIGN SYSTEM</p>
+    <h1>Design tokens make styles consistent</h1>
+    <p class="lead">A typography and colour system can be reused across an entire website.</p>
+    <h2>Why use tokens?</h2>
+    <p>CSS custom properties store shared values in one place. Updating a token can update every component that uses it.</p>
+  </main>
+</body>
+</html>
