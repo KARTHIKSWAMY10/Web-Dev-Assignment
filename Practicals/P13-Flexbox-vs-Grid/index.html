@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox vs Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#">LAYOUT LAB</a>
+    <nav aria-label="Main navigation"><a href="#comparison">Compare</a><a href="#examples">Examples</a></nav>
+  </header>
+  <main>
+    <section class="hero"><p>CSS LAYOUT GUIDE</p><h1>Flexbox or Grid?</h1><p>Choose a layout tool based on how your content needs to flow.</p></section>
+    <section id="comparison" class="comparison">
+      <article><h2>Flexbox</h2><p>Best for arranging items in one direction: a row or a column.</p><ul><li>Navigation bars</li><li>Button groups</li><li>Header alignment</li></ul></article>
+      <article><h2>CSS Grid</h2><p>Best for layouts controlled in two dimensions: rows and columns.</p><ul><li>Photo galleries</li><li>Dashboard layouts</li><li>Newspaper columns</li></ul></article>
+    </section>
+    <section id="examples" class="examples">
+      <h2>One shared page layout</h2>
+      <p>The header uses Flexbox to align its logo and navigation in a row. The content area uses Grid to create two equal columns.</p>
+      <div class="demo-grid"><div>Grid item 1</div><div>Grid item 2</div><div>Grid item 3</div><div>Grid item 4</div></div>
+    </section>
+  </main>
+  <footer>Use Flexbox for one-dimensional alignment and Grid for two-dimensional structure.</footer>
+</body>
+</html>
